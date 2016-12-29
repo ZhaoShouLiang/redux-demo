@@ -3,20 +3,26 @@ import store from './store.js'
 class Work extends React.Component{
   constructor(props){
     super(props);
-    this.state={
-      comments:store.getState().comments[this.props.postId]
+    console.log(store.getState().comments)
 
+    this.state={
+      comments: store.getState().comments[this.props.postId]
     }
+    console.log("333333333333");
+    console.log(this.state.comments);
+    console.log("333333333333")
+
   }
   submitClick(e){
     e.preventDefault();
     let title = this.refs.title.value;
     let content = this.refs.content.value;
-    let data = title + ' ： ' + content;
+
 
       store.dispatch({
-        type:'AAA',
-        data
+        type: 'AAA',
+        data: title + ' ： ' + content,
+        postId: this.props.postId
       })
       console.log(store.getState());
 

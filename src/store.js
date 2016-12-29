@@ -3,8 +3,8 @@ import rootReducer from './reducers';
 
 
 let comments = {
-  1 : ['aaa', 'aaa'],
-  2 : ['ccc', 'ccc']
+  1 : ['aaa1', 'aaa1'],
+  2 : ['ccc2', 'ccc2']
  }
 let posts = [{
   id:1,

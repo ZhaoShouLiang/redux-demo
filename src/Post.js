@@ -7,7 +7,7 @@ import './main.css';
 
 class Post extends React.Component{
    render(){
-     console.log(this.props.params.id);
+     console.log("1111" + this.props.params.id);
      return(
        <Provider store={store}>
          <div>
