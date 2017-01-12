@@ -11,12 +11,13 @@
 .postBody{
   width: 500px;
   height: 300px;
+  padding-top: 20px;
   margin: 0 auto;
   background: #eee;
   box-shadow: 0 0 3px #ccc;
   position: relative;
 }
-.likeNum{
+.commentsNum{
   position: absolute;
   right: 20px;
   bottom:20px;
@@ -76,4 +77,20 @@ form{
   line-height: 30px;
   border-bottom: 1px #ccc solid;
   color: #aaa111;
+}
+.likesNum{
+  position: absolute;
+  right: 80px;
+  bottom:20px;
+  width: 40px;
+  height: 30px;
+  border-radius: 3px;
+  background: #E91E63;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+}
+.title{
+  width: 400px;
+  margin: 0 auto;
 }

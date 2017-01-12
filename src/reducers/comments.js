@@ -1,5 +1,5 @@
 
-function courseComments(state = [], action) {
+function postComments(state = [], action) {
   switch(action.type){
     case 'AAA':
       return [...state, action.data];
@@ -12,7 +12,7 @@ function commentReducer(state = [], action) {
   if(typeof action.postId !== 'undefined') {
     return {
       ...state,
-      [action.postId]: courseComments(state[action.postId], action)
+      [action.postId]: postComments(state[action.postId], action)
     }
   }
   return state;

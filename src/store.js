@@ -8,11 +8,13 @@ let comments = {
  }
 let posts = [{
   id:1,
-  title:'aaa'
+  title:'时间一直向前走，没有尽头，只有路口',
+  likes:3
 },
 {
   id:2,
-  title:'bbb'
+  title:'bbb',
+  likes:6
 }]
 
 const defauleState = {
